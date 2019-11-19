@@ -1,0 +1,62 @@
+<h3> preview data...</h3>
+
+      <!-- Customer personal Id:       {{cust_Detail.cust_p_d_id}}<br><br>
+     Customer Id:                {{cust_Detail.cust_id}}<br><br>
+     Customer Occupation:         {{cust_Detail.cust_occupation}}<br><br>
+     Customer Local Address:      {{cust_Detail.cust_local_address}}<br><br>
+    Customer Local police station:   {{cust_Detail.cust_local_ps}}<br><br>
+     Customer Localdist Id:         {{cust_Detail.cust_localdistid}}<br><br>
+     Customer Localstate Id:        {{cust_Detail.cust_localstateid}}<br><br>
+     Customer Permenant Address    {{cust_Detail.cust_p_address}}<br><br>
+     Customer  permaenent police station {{cust_Detail.cust_p_ps}}<br><br>
+     Customer  permaenent distId: {{cust_Detail.cust_p_distid}}<br><br>
+     Customer  permaenent StateId: {{cust_Detail.cust_p_stateid}}<br><br>
+     Customer Annual Income: {{cust_Detail.annual_income}}<br><br>
+ 
+
+<!-- <button class="btn btn-success  btn-block"(click)="editData(cust_Detail)" >Edit Go Back</button> --> 
+
+<div class="container">
+        <table class="table table-striped">
+          <thead>
+              <tr>
+                <th>Customer-p-Id</th>
+                <th>Customer Id</th>
+                <th> Customer_Occupation</th>
+                <th>Customer_Local Address</th>
+                <th>Customer_Local police station</th>
+                <th>Customer_Localdist Id</th>
+                <th> Customer_Localstate Id</th>
+                <th> Customer_Permenant Address </th>
+                <th>Customer_permaenent police station</th>
+                <th>Customer_permaenent distId</th>
+                <th> Customer_permaenent StateId</th>
+                <th>Customer_Annual_Income</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ cust_Detail.cust_p_d_id }}</td>
+              <td>{{ cust_Detail.cust_id }}</td>
+              <td>{{ cust_Detail.cust_occupation }}</td>
+              <td>{{ cust_Detail.cust_local_address }}</td>
+              <td>{{cust_Detail.cust_local_ps}}</td>
+              <td> {{cust_Detail.cust_localdistid}}</td>
+              <td>{{cust_Detail.cust_localstateid}}</td>
+              <td> {{cust_Detail.cust_p_address}}</td>
+              <td>{{cust_Detail.cust_p_ps}}</td>
+              <td> {{cust_Detail.cust_p_distid}}</td>
+              <td>{{cust_Detail.cust_p_stateid}}</td>
+              <td>{{cust_Detail.annual_income}}</td>
+              
+
+            </tr>
+            <button class="btn btn-success  btn-block" (click)="saveData(cust_Detail)">confirm submit</button>  
+          </tbody>
+        </table>
+      </div>
+
+                
+
+
+

@@ -1,0 +1,236 @@
+<body>
+  <h4> CUSTOMER DETAILS REGISTRATION FORM...</h4>
+  <!-- <div class="container">
+    <div class form-group col-md-5><br><br>
+      <mat-form-field class="customer personal Id">
+      Customer personal detail id: <input matInput  placeholder="cust p id" [(ngModel)]="cust_Detail.cust_p_d_id"name="custpid"><br><br>
+      </mat-form-field>
+    </div>
+
+    <div class form-group><br><br>
+
+      customer Id: <input type="text" class="form-control" placeholder="cust id" [(ngModel)]="cust_Detail.cust_id"><br><br>
+    </div>
+
+    <div class form-group><br><br>
+
+      Customer occupation: <input type="text" class="form-control" placeholder="occupation" [(ngModel)]="cust_Detail.cust_occupation"><br><br>
+    </div>
+
+
+    <div class form-group><br><br>
+
+      Customer local address: <input type="text" class="form-control" placeholder="address"[(ngModel)]="cust_Detail.cust_local_address"><br><br>
+    </div>
+
+    <div class form-group><br><br>
+
+      Customer local police station: <input type="text" class="form-control" placeholder="police station"[(ngModel)]="cust_Detail.cust_local_ps" cust_local_ps><br><br>
+    </div>
+    <div class form-group><br><br>
+
+      Customer local Dist Id: <input type="text" class="form-control" placeholder="dist id"[(ngModel)]="cust_Detail.cust_localdistid"><br><br>
+    </div>
+    <div class form-group><br><br>
+
+      Customer state Id: <input type="text" class="form-control" placeholder="state id"
+        [(ngModel)]="cust_Detail.cust_localstateid"><br><br>
+    </div>
+    <div class form-group><br><br>
+
+      Customer Permanent Address: <input type="text" class="form-control" placeholder="Address"[(ngModel)]="cust_Detail.cust_p_address"><br><br>
+    </div>
+    <div class form-group><br><br>
+
+      Customer Permanent Police station: <input type="text" class="form-control" placeholder="police station"[(ngModel)]="cust_Detail.cust_p_ps"><br><br>
+    </div>
+    <div class form-group><br><br>
+
+      Customer Permanent Dist Id: <input type="text" class="form-control" placeholder="dist id"[(ngModel)]="cust_Detail.cust_p_distid"><br><br>
+    </div>
+    <div class form-group><br><br>
+
+      Customer Permanent State Id: <input type="text" class="form-control" placeholder="state id" [(ngModel)]="cust_Detail.cust_p_stateid"><br><br>
+    </div>
+    <div class form-group><br><br>
+
+      Customer's Annual Income: <input type="text" class="form-control" placeholder="Income"[(ngModel)]="cust_Detail. annual_income"><br><br>
+    </div>
+    <button class="btn btn-success  btn-block" (click)="previweData(cust_Detail)">Previewdata</button>
+    <!-- <button class="btn btn-success  btn-block" (click)="previewdata"(cust_Detail)">preview</button> -->
+
+  <!-- </div> --> -->
+
+
+  <mat-card>
+    <!-- Title of an Card -->
+    <mat-card-title>
+      Customer Details
+    </mat-card-title>
+
+    <mat-card-content>
+      <form>
+        <table>
+          <tr>
+            <td>
+              <mat-form-field class="demo-full-width">
+                <input matInput type="number" placeholder="Customer Personal Id" [(ngModel)]="cust_Detail.cust_p_d_id"
+                  formControlName="cpid">
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="demo-full-width">
+                <input matInput type="number" placeholder="Customer Id" [(ngModel)]="cust_Detail.cust_id"
+                  formControlName="cid" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="demo-full-width">
+                <input matInput placeholder="Customer-Occupation" [(ngModel)]="cust_Detail.cust_occupation"
+                  name="cust_occupation" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="demo-full-width">
+                <input matInput placeholder="Local-Address" [(ngModel)]="cust_Detail.cust_local_address"
+                  name="custlocaladdress" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="demo-full-width">
+                <input matInput placeholder="Local-Police Station" [(ngModel)]="cust_Detail.cust_local_ps"
+                  name="custlocalpolice" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="demo-full-width">
+                <input matInput placeholder="Local-Dist Id" [(ngModel)]="cust_Detail.cust_localdistid"
+                  name="custlocaldist" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="demo-full-width">
+                <input matInput placeholder="Local-State Id" [(ngModel)]="cust_Detail.cust_localstateid"
+                  name="custlocalstate" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="demo-full-width">
+                <input matInput placeholder="Permanent-Address" [(ngModel)]="cust_Detail.cust_p_address"
+                  name="custpermanntaddress" required>
+              </mat-form-field>
+            </td>
+          <tr>
+            <td>
+              <mat-form-field class="demo-full-width">
+                <input matInput placeholder=" Permanent-Police Station" [(ngModel)]="cust_Detail.cust_p_ps"
+                  name="custpermanntpolice" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="demo-full-width">
+                <input matInput placeholder="Permanent-Dist Id" [(ngModel)]="cust_Detail.cust_p_distid"
+                  name="custpermanntdistid" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="demo-full-width">
+                <input matInput placeholder=" Permanent-State Id" [(ngModel)]="cust_Detail.cust_p_stateid"
+                  name="custpermanntstateid" required>
+              </mat-form-field>
+            </td>
+          </tr>
+
+          <td>
+            <mat-form-field class="demo-full-width">
+              <input matInput placeholder="Annual-Income" [(ngModel)]="cust_Detail. annual_income" name="annualincome"
+                required>
+            </mat-form-field>
+          </td>
+
+
+          <!-- <tr> -->
+          <!-- <mat-form-field class="demo-full-width">
+                            <textarea matInput placeholder="Previous Loan Start Date" matTextareaAutosize
+                                matAutosizeMinRows="2" matAutosizeMaxRows="5"></textarea>
+                        </mat-form-field> -->
+          <!-- <td> -->
+          <!-- <mat-form-field>
+                            <input matInput [matDatepicker]="mypicker" placeholder="Previous Loan Start Date"
+                                [(ngModel)]="preLoan.p_loan_startdate" name="pre_loan_strt_date">
+                            <mat-datepicker-toggle matSuffix [for]="mypicker"></mat-datepicker-toggle>
+                            <mat-datepicker #mypicker></mat-datepicker>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field>
+                            <input matInput [matDatepicker]="picker" placeholder="Previous Loan End Date"
+                                [(ngModel)]="preLoan.p_loan_enddate" name="pre_loan_end_date">
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                        </mat-form-field>
+                    </td>
+                </tr> -->
+          <!-- <tr>
+                    
+                    <td><br>
+                        <mat-form-field>
+                            <mat-select placeholder="Select Blog" [(value)]="selected">
+                                <mat-option>-- Select Any --</mat-option>
+                                <mat-option value="1">C#Corner</mat-option>
+                                <mat-option value="2">C#Corner</mat-option>
+                                <mat-option value="3">C#Corner</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                </tr> -->
+          <!-- <tr>
+                    <td colspan="2">
+                        <mat-form-field class="demo-full-width">
+                            <input matInput placeholder="Previous Bank Name" [(ngModel)]="preLoan.p_loan_bank"
+                                name="pre_loan_bank" required>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <mat-form-field class="demo-full-width">
+                            <input matInput placeholder="Loan Status" [(ngModel)]="preLoan.p_loan_status"
+                                name="pre_loan_status">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- <td colspan="2">
+
+                    </td>
+                </tr> -->
+          <tr>
+            <td colspan="2" class="content-center">
+              <button mat-raised-button color="accent" (click)="previweData(cust_Detail)">Preview</button>&nbsp;
+              <button mat-raised-button color="accent" (click)="clear()">Clear</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</body>
